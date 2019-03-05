@@ -1,0 +1,24 @@
+#include<stdio.h>
+int input()
+    {
+    int a;
+    printf("enter the value of a:");
+    scanf("%d",&a);
+    return a;
+    }
+int compute(int b)
+    {
+    b=b+1;
+    return b;
+    }
+int output(int c)
+    {
+    printf("the new number is %d:",c);
+    }
+void main()
+    {
+    int x,y;
+    x=input();
+    y=compute(x);
+    output(y);
+    }
