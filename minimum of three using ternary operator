@@ -1,0 +1,25 @@
+#include<stdio.h>
+int input(int *a,int *b,int *c)
+{
+printf("enter the numbers:");
+scanf("%d%d%d",a,b,c);
+}
+int compare(int x,int y,int z)
+{
+int temp,min;
+temp=(x<y)?x:y;
+min=(z<temp)?z:temp;
+return min;
+}
+int output(int m)
+{
+printf("the smallest number among the given three numbers is:%d\n",m);
+return m;
+}
+void main()
+{
+int p,q,r,s,t;
+p=input(&q,&r,&s);
+t=compare(q,r,s);
+output(t);
+}
